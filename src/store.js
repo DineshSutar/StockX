@@ -1,9 +1,11 @@
-// @flow
 import { applyMiddleware, createStore } from 'redux';
 import promise from 'redux-promise-middleware';
-import reducers from './reducers';
+import logger from 'redux-logger';
 
-const middlewareList = [promise];
+import reducers from './reducers';
+import { fetchStockPricesMiddleware } from './fetchStockPricesMiddleWare';
+
+const middlewareList = [promise, logger, ...fetchStockPricesMiddleware];
 const middleware = applyMiddleware(...middlewareList);
 
 
