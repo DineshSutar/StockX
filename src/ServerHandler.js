@@ -1,4 +1,3 @@
-/* @flow */
 import axiosImport from 'axios';
 
 const axios = axiosImport.create({ 
@@ -8,19 +7,19 @@ const axios = axiosImport.create({
 });
 
 export class ServerHandler {
-    static updateStockPrice(data, id) {
-        return axios.put(``, data);
+    static fetchStockPrices() {
+        return axios.get('?view=Grid view');
     }
 
-    static setStockPrice(data, id) {
+    static updateStockPrice(data, id) {
+        return axios.put(`/${id}`, data);
+    }
+
+    static setStockPrice(data) {
         return axios.post('/', data);
     }
 
-    static fetchStockPrices() {
-        return axios.get('/');
-    }
-
-    static removeStockPrice(id) {
+    static deleteStockPrice(id) {
         return axios.delete(id);
     }
 }
