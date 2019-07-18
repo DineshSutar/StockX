@@ -1,8 +1,9 @@
-// @flow
 import { combineReducers } from 'redux';
 
 import calenderReducer from './calenderReducer';
+import updatePricesReducer from './updatePricesReducer';
 
 export default AppReducer = combineReducers({
-    calender: calenderReducer
+    calender: calenderReducer,
+    updatePrices: updatePricesReducer,
 });
