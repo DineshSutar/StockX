@@ -26,7 +26,7 @@ const initState = {
     error: null,
 };
 
-export default function calenderReducer(state = initState, action) {
+export default function calendarReducer(state = initState, action) {
   switch (action.type) {
     case ACTION_TYPES.INIT:
       return initState;

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import calenderReducer from './calenderReducer';
+import calendarReducer from './calendarReducer';
 import updatePricesReducer from './updatePricesReducer';
 
 export default AppReducer = combineReducers({
-    calender: calenderReducer,
+    calendar: calendarReducer,
     updatePrices: updatePricesReducer,
 });
