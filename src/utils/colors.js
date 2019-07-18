@@ -1,0 +1,15 @@
+export default COLORS = {
+    TRANSPARENT: '#00000000',
+    WHITE: '#FFFFFF',
+    BLACK: '#000000',
+    BLUE_GREY_50: '#eceff1',
+    BLUE_GREY_100: '#cfd8dc',
+    BLUE_GREY_200: '#b0bec5',
+    BLUE_GREY_300: '#90a4ae',
+    BLUE_GREY_400: '#78909c',
+    BLUE_GREY_500: '#607d8b',
+    BLUE_GREY_600: '#546e7a',
+    BLUE_GREY_700: '#455a64',
+    BLUE_GREY_800: '#37474f',
+    BLUE_GREY_900: '#263238',
+};
