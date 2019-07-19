@@ -68,7 +68,7 @@ export default class Calendar extends PureComponent {
                         }}
                     >
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('Screen2', { data: item })}
+                        onPress={() => this.props.navigation.navigate('UpdatePriceScreen', { data: item })}
                         style={{
                             flex: 1,
                             alignItems: 'center',

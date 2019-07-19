@@ -8,7 +8,7 @@ import { fetchStockPrices } from '../actions/actions';
 import Calendar from '../components/Calendar';
 import Graph from '../components/Graph';
 
-class Screen1 extends PureComponent {
+class HomeScreen extends PureComponent {
     constructor(props) {
         super(props);
         this.loadData();
@@ -38,4 +38,4 @@ function mapStateToProps(reduxStore) {
 export default connect(
     mapStateToProps,
     null,
-)(Screen1);
+)(HomeScreen);

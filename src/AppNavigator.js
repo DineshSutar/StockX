@@ -1,15 +1,14 @@
-// @flow
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Screen1 from './Screens/Screen1';
-import Screen2 from './Screens/Screen2';
+import HomeScreen from './Screens/HomeScreen';
+import UpdatePriceScreen from './Screens/UpdatePriceScreen';
 
 const AppNavigator = createStackNavigator(
     {
-      Screen1: Screen1,
-      Screen2: Screen2,
+      HomeScreen: HomeScreen,
+      UpdatePriceScreen: UpdatePriceScreen,
     },
     {
-      initialRouteName: 'Screen1',
+      initialRouteName: 'HomeScreen',
       headerMode: 'none',
     }
 );
