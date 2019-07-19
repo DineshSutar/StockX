@@ -28,17 +28,17 @@ export default function updatePricesReducer(state = initState, action) {
         case `${ACTION_TYPES.UPDATE_STOCK_PRICE}_${PROMISE_MIDDLEWARE_SUFFIX.PENDING}`: 
             return {
                 ...state,
-                status: REST_STATUS.LOADING,
+                updatePriceStatus: REST_STATUS.LOADING,
             };
         case `${ACTION_TYPES.UPDATE_STOCK_PRICE}_${PROMISE_MIDDLEWARE_SUFFIX.REJECTED}`: 
             return {
                 ...state,
-                status: REST_STATUS.ERROR,
+                updatePriceStatus: REST_STATUS.ERROR,
             };
         case `${ACTION_TYPES.UPDATE_STOCK_PRICE}_${PROMISE_MIDDLEWARE_SUFFIX.FULFILLED}`: 
             return {
                 ...state,
-                status: REST_STATUS.SUCCESS,
+                updatePriceStatus: REST_STATUS.SUCCESS,
             };
       default:
     }
