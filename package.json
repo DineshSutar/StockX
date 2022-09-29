@@ -21,7 +21,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^6.1.1",
-    "victory-native": "^32.0.2"
+    "victory-native": "^36.6.8"
   },
   "devDependencies": {
     "@babel/core": "7.5.4",
